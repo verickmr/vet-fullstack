@@ -1,0 +1,28 @@
+GET http://localhost:3001/scheduling
+
+
+###
+POST http://localhost:3001/scheduling
+content-type: application/json
+
+{
+  "responsibleName": "victor",
+  "petName": "hulk",
+  "cpfOrMatricula": "000000000",
+  "email": "v@gmail.com",
+  "phoneNumber": "999999999",
+  "desiredTime": "13",
+  "vaccinationCard": "false",  
+  "appointmentDate": "2024-12-12"
+}
+
+
+###
+PATCH  http://localhost:3001/scheduling/1
+content-type: application/json
+
+{
+  
+  "petName": "zico"
+ 
+}
